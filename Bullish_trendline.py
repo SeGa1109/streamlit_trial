@@ -134,9 +134,6 @@ def fun_getlist(a):
 
 
 
-
-
-
 # fun_getlist("2_nasdaq script list")#
 #fun_getlist("NIFTY500")
 # fun_getlist("SP500")

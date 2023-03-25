@@ -1,0 +1,8 @@
+pandas
+openbb_terminal.sdk
+numpy
+matplotlib
+scipy
+sklearn
+plotly
+PIL
