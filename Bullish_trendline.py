@@ -113,6 +113,7 @@ def fun_acendingtriangle(ticker):
         return None
 
 def fun_getlist(a):
+    url=
     inputlistpath=r"G:\PyGit\pythonProject\{}.csv".format(a)
     all_us_script_list = pd.read_csv(inputlistpath, header=None)
     all_us_script_list_2 = all_us_script_list[0].tolist()
