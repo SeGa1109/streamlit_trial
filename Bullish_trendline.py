@@ -100,22 +100,15 @@ def fun_acendingtriangle(ticker):
             tickvals=dfpl.index,
             ticktext=dfpl['date']
         ))
-        # fig.show()
-        fig.write_image(
-            "G:\PyGit\pythonProject\generated\{}.jpeg".format(
-                ticker))
-        image=Image.open("G:\PyGit\pythonProject\generated\{}.jpeg".format(
-                ticker))
-        return image
-        #st.image(image,caption=ticker)
+        data=fig.to_image(format='jpg')
+        return data
     else:
         print("out of range")
         return None
 
 def fun_getlist(a):
-    url='https://github.com/SeGa1109/streamlit_trial/blob/main/NSE50.csv'
-    download = requests.get(url).content
-    all_us_script_list = pd.read_csv(io.StringIO(download.decode('utf-8')), header=None)
+    url='https://raw.githubusercontent.com/SeGa1109/streamlit_trial/main/NSE50.csv'
+    all_us_script_list = df = pd.read_csv(url, header=None)
     all_us_script_list_2 = all_us_script_list[0].tolist()
     i=0
     j=1

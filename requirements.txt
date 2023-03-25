@@ -6,6 +6,3 @@ sklearn
 plotly
 Pillow
 openbb
-requests
-io
-streamlit
