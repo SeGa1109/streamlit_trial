@@ -6,3 +6,4 @@ sklearn
 plotly
 Pillow
 openbb
+kaleido
