@@ -113,9 +113,9 @@ def fun_acendingtriangle(ticker):
         return None
 
 def fun_getlist(a):
-    url=
-    inputlistpath=r"G:\PyGit\pythonProject\{}.csv".format(a)
-    all_us_script_list = pd.read_csv(inputlistpath, header=None)
+    url='https://github.com/SeGa1109/streamlit_trial/blob/main/NSE50.csv'
+    download = requests.get(url).content
+    all_us_script_list = pd.read_csv(io.StringIO(download.decode('utf-8')), header=None)
     all_us_script_list_2 = all_us_script_list[0].tolist()
     i=0
     j=1
