@@ -7,7 +7,7 @@ st.title('Bullish Trendline Graph Generation')
 index=st.selectbox("Index",options=["NSE50","BSE"])
 if st.button('Generate'):
     with st.spinner("Extracting"):
-        #Bullish_trendline.fun_getlist(index)
+        Bullish_trendline.fun_getlist(index)
         st.text("WIP")
 
 
